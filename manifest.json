@@ -3,9 +3,9 @@
     "short_name": "withtaste",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#hexcode",
-    "theme_color": "#hexcode",
-    "description": "A new Flutter project.",
+    "background_color": "#11ff99",
+    "theme_color": "#ff9911",
+    "description": "WithTaste retail outlet application.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
