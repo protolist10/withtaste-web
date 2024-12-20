@@ -1,56 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <base href="/withtaste-web/">
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
 
-    <meta charset="UTF-8">
-    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-    <meta name="description" content="WithTaste retail outlet application">
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
 
-    <!-- iOS meta tags & icons -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="WithTaste Retail Outlet">
-    <link rel="apple-touch-icon" href="icons/Icon-192.png">
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png"/>
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/withtaste-web/">
 
-    <title>WithTaste Retail Outlet</title>
-    <link rel="manifest" href="manifest.json">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="withtaste">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>withtaste</title>
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
-<script>
-    function isPromiseSupported() {
-        return typeof Promise !== 'undefined';
-    }
-    function isFetchSupported() {
-        return typeof fetch !== 'undefined';
-    }
-    function isAsyncSupported() {
-        try {
-            new Function('async function test() {}')();
-            return true;
-        } catch (e) {
-            return false;
-        }
-    }
-    var promiseSupported = isPromiseSupported();
-    var fetchSupported = isFetchSupported();
-    var asyncSupported = isAsyncSupported();
-    console.log('Promise - ' + promiseSupported);
-    console.log('Fetch - ' + fetchSupported);
-    console.log('Async/Await - ' + asyncSupported);
-    var el;
-    if (promiseSupported && fetchSupported && asyncSupported) {
-        el = document.createElement('script');
-        el.src = 'flutter_bootstrap.js';
-    } else {
-        el = document.createElement('h1');
-        el.style.color = 'red';
-        el.innerHTML = 'Браузер не поддерживается.<br>Browser is not supported.';
-    }
-    document.body.appendChild(el);
-</script>
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
